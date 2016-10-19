@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>When Does The Stock Exchange Open</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>When Does The Stock Exchange Open</title>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <div class="container">
-        <h1>When Does the Stock Exchange Open</h1>
-        <div class="currenttime"></div>
-        <div class="stockexchange"></div>
-        <button id="time">Update Time</button>
-    </div>
-
-    <script src="libs/jquery-3.1.1.min.js"></script>
-    <script src="js/app.js"></script>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-WDSEO-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">When Does the Exchange Open</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="bs-WDSEO-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<div class="container">
+		<div class="col-md-12" id="currenttime"></div>
+		<!-- <div class="stockexchange"></div> -->
+        <div class="panel panel-default col-md-6 no-padding">
+            <div class="panel-heading">
+                <h3 class="panel-title">New York Stock Exchange (NYSE)</h3>
+            </div>
+            <div class="panel-body" id="NYSE"></div>
+        </div>
+        <div class="panel panel-default col-md-6 no-padding">
+            <div class="panel-heading">
+                <h3 class="panel-title">London Stock Exchange (LSE)</h3>
+            </div>
+            <div class="panel-body" id="LSE"></div>
+        </div>
+	</div>
+    
+	<script src="libs/jquery-3.1.1.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
